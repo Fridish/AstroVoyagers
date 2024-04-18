@@ -1,16 +1,20 @@
-import { lazy } from "react";
-import {Route, BrowserRouter, Routes} from "react-router-dom";
+import { Suspense, lazy } from "react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import Nav from "@components/Nav/Nav";
 
-const Home = lazy(() => import("./pages/Home/Home"))
-const Rocket = lazy(() => import("./pages/Rocket/Rocket"))
+const Home = lazy(() => import("./pages/Home/Home"));
+const Rocket = lazy(() => import("./pages/Rocket/Rocket"));
 
-const App = ({}) => {
-  return(
+const App = () => {
+  return (
     <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/:id" element={<Rocket/>} />
-      </Routes>
+      <Suspense fallback={<div>Loading ...</div>}>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/rockets/:id" element={<Rocket />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };
