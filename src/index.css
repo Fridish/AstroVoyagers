@@ -1,4 +1,8 @@
 :root {
+  /* Colors */
+  --black: #000;
+  --white: #fff;
+
   /* Spacing */
   --p-xs: 0.25rem;
   --p-sm: 0.5rem;
@@ -37,4 +41,13 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
