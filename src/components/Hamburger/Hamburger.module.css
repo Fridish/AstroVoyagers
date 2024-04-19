@@ -1,0 +1,37 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu > div {
+  width: 16px;
+  height: 2px;
+  background-color: var(--white);
+
+  transition: all 0.2s;
+  transform-origin: left;
+}
+
+.menu[aria-expanded="true"] > div {
+  transition: all 0.2s;
+}
+
+.menu[aria-expanded="true"] > div:nth-child(1) {
+  transform: rotate(45deg) translateY(-1px);
+  border-radius: 100vmax;
+  width: calc(10px * sqrt(2));
+}
+
+.menu[aria-expanded="true"] > div:nth-child(2) {
+  width: 0;
+  transition: all 0.1s;
+}
+
+.menu[aria-expanded="true"] > div:nth-child(3) {
+  transform: rotate(-45deg) translateY(1px);
+  border-radius: 100vmax;
+  width: calc(10px * sqrt(2));
+}

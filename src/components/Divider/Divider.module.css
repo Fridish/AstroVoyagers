@@ -1,0 +1,35 @@
+.base {
+  background-color: var(--white);
+}
+
+.horizontal {
+  width: 100%;
+}
+
+.horizontal.sm {
+  height: 1px;
+}
+
+.horizontal.md {
+  height: 2px;
+}
+
+.horizontal.lg {
+  height: 4px;
+}
+
+.vertical {
+  height: 100%;
+}
+
+.vertical.sm {
+  width: 1px;
+}
+
+.vertical.md {
+  width: 2px;
+}
+
+.vertical.lg {
+  width: 4px;
+}

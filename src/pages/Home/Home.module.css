@@ -1,0 +1,21 @@
+.container {
+  padding: 0 var(--p-md);
+}
+
+.hero {
+  height: calc(100vh - 52px);
+}
+
+.hero .canvas {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border-top-left-radius: var(--rounded-md);
+  border-top-right-radius: var(--rounded-md);
+}
