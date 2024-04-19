@@ -1,0 +1,123 @@
+.base {
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--rounded-xs);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-md);
+  padding: var(--p-sm) var(--p-md);
+  width: fit-content;
+
+  transition: filter 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.base:disabled {
+  cursor: default;
+}
+
+/* ---- Primary ---- */
+
+.primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.primary:hover {
+  transition: filter 0.3s;
+  filter: brightness(0.8);
+}
+
+.primary:hover:disabled {
+  filter: none;
+}
+
+.primary:disabled {
+  background-color: var(--grey);
+}
+
+/* ---- Secondary ---- */
+
+.secondary {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.secondary:hover {
+  transition: filter 0.3s;
+  filter: brightness(0.8);
+}
+
+.secondary:hover:disabled {
+  filter: none;
+}
+
+.secondary:disabled {
+  background-color: var(--grey);
+}
+
+/* ---- Outlined ---- */
+
+.outlined {
+  transition: background-color 0.3s, color 0.3s;
+
+  border: 1px solid var(--white);
+  color: var(--white);
+  background-color: transparent;
+}
+
+.outlined:hover {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.outlined:hover:disabled {
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+}
+
+.outlined:disabled {
+  border: 1px solid var(--grey);
+  color: var(--grey);
+}
+
+/* ---- Ghost ---- */
+
+.ghost {
+  transition: background-color 0.3s, color 0.3s;
+
+  color: var(--white);
+  background-color: transparent;
+}
+
+.ghost:hover {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgba(126, 126, 126, 0.5);
+}
+
+.ghost:hover:disabled {
+  background-color: transparent;
+  color: var(--grey);
+}
+
+.ghost:disabled {
+  color: var(--grey);
+}
+
+/* ---- Icon ---- */
+
+.icon {
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: var(--p-sm);
+  background: none;
+}
+
+.icon:disabled {
+  border: 1px solid var(--grey);
+  color: var(--grey);
+}

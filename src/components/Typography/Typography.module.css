@@ -1,0 +1,57 @@
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+.h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.p {
+  font-weight: 400;
+}
+
+.p.lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.005rem;
+}
+
+.p.md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.00219rem;
+}
+
+.p.sm {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.003rem;
+}
