@@ -1,6 +1,6 @@
 .nav {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .header {
@@ -27,7 +27,7 @@
   gap: var(--gap-md);
   padding: var(--p-md);
   padding-top: var(--p-3xl);
-  background-color: var(--white);
+  background-color: var(--black);
 
   transition: all 0.3s;
 }

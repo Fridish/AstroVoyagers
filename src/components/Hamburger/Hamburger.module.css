@@ -9,7 +9,7 @@
 .menu > div {
   width: 16px;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--white);
 
   transition: all 0.2s;
   transform-origin: left;
