@@ -1,4 +1,11 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 var(--p-md);
+}
+
+.hero {
+  height: calc(100vh - 52px);
+  display: grid;
+  place-content: center;
 }
