@@ -55,3 +55,8 @@ a {
   text-decoration: none;
   color: var(--white);
 }
+
+@font-face {
+  font-family: "porter-sans";
+  src: url("/fonts/porter-sans-inline-block-webfont.woff");
+}

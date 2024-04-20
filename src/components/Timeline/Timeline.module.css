@@ -31,6 +31,8 @@
   user-select: none;
 }
 
-.side img {
-  width: 100%;
+@media (min-width: 35rem) {
+  .story {
+    grid-template-columns: 52px 1fr;
+  }
 }
