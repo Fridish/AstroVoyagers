@@ -3,12 +3,9 @@ import useFetch from "@hooks/useFetch";
 import Typography from "@components/Typography/Typography";
 import Divider from "@components/Divider/Divider";
 import Button from "@components/Button/Button";
+import Icons from "@components/Icons";
 
-const planets = [
-  "planet_ring.svg",
-  "planet_stripes_dots.svg",
-  "planet_strips.svg",
-];
+const planets = ["planetRing", "planetStripesDots", "planetStripes"];
 
 const Timeline = () => {
   const { data, loading } = useFetch("https://api.spacexdata.com/v4/history");
@@ -25,7 +22,7 @@ const Timeline = () => {
   const getRandomPlanet = () => {
     const index = Math.floor(Math.random() * planets.length);
 
-    return `/planets/${planets[index]}`;
+    return planets[index];
   };
 
   if (loading) return <div>Loading</div>;
@@ -36,7 +33,13 @@ const Timeline = () => {
         data.map((item, i) => (
           <div className={styles.story} key={item.id}>
             <div className={styles.side}>
-              <img src={getRandomPlanet()} alt="planet icon" />
+              <div>
+                <Icons
+                  width={"100%"}
+                  height={"100%"}
+                  variant={getRandomPlanet()}
+                />
+              </div>
               {i < data.length - 1 && (
                 <Divider
                   orientation={"vertical"}
