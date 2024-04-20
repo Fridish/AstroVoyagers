@@ -40,6 +40,86 @@
   height: fit-content;
 }
 
+.planetRing {
+  position: absolute;
+  bottom: 20%;
+  left: -50px;
+  width: 130px;
+  height: fit-content;
+}
+
+.gloab {
+  background-color: var(--black);
+  width: 300px;
+  border-radius: 100vmax;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: -150px;
+  right: -150px;
+}
+
+.star1 {
+  position: absolute;
+  bottom: 10%;
+  left: 32px;
+  transform: rotate(25deg);
+}
+
+.star2 {
+  position: absolute;
+  bottom: 28%;
+  left: 120px;
+  transform: rotate(-20deg) scale(0.7);
+}
+
+.rocket {
+  width: 40px;
+  height: fit-content;
+}
+
+.rocket2 {
+  width: 20px;
+  height: fit-content;
+  transform: rotate(180deg);
+}
+
+.rocketContainer {
+  position: absolute;
+  transform-origin: right;
+  bottom: 0;
+  right: 50px;
+  width: 230px;
+  animation: fly infinite linear forwards 20s;
+}
+
+.rocketContainer2 {
+  position: absolute;
+  transform-origin: right top;
+  top: 0;
+  right: 0;
+  width: 200px;
+  transform: rotate(50deg);
+  animation: fly2 infinite linear reverse 25s;
+}
+
+@keyframes fly {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fly2 {
+  from {
+    transform: rotate(50);
+  }
+  to {
+    transform: rotate(410deg);
+  }
+}
+
 @media (min-width: 600px) {
   .hero h1 {
     font-size: 3.5rem;
@@ -52,7 +132,29 @@
 
   .planetStripesDots {
     bottom: -80px;
-    right: -80px;
+    width: 300px;
+  }
+
+  .planetRing {
+    width: 200px;
+  }
+
+  .rocketContainer {
+    bottom: 40px;
+    right: 70px;
+  }
+
+  .gloab {
+    width: 500px;
+    top: -250px;
+    right: -250px;
+  }
+
+  .star2 {
+    left: 190px;
+  }
+
+  .rocketContainer2 {
     width: 300px;
   }
 }
@@ -73,8 +175,21 @@
 
   .planetStripesDots {
     bottom: -90px;
-    right: -90px;
     width: 350px;
+  }
+
+  .planetRing {
+    width: 230px;
+  }
+
+  .rocketContainer {
+    bottom: 60px;
+    right: 110px;
+    width: 250px;
+  }
+
+  .star2 {
+    left: 220px;
   }
 }
 

@@ -13,11 +13,28 @@ const Home = () => {
         <Typography variant="h5">
           SpaceX History, Rockets and Roadster
         </Typography>
+
         <Icons
           variant={"planetStripesDots"}
           color="black"
           className={styles.planetStripesDots}
         />
+        <Icons
+          variant={"planetRing"}
+          color="black"
+          className={styles.planetRing}
+        />
+        <div className={styles.gloab} />
+
+        <div className={styles.rocketContainer}>
+          <Icons variant={"rocket"} color="black" className={styles.rocket} />
+        </div>
+        <div className={styles.rocketContainer2}>
+          <Icons variant={"rocket2"} color="black" className={styles.rocket2} />
+        </div>
+
+        <Icons variant={"star"} color="black" className={styles.star1} />
+        <Icons variant={"star"} color="black" className={styles.star2} />
       </section>
       <Timeline />
     </main>
