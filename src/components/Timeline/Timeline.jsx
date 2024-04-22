@@ -3,9 +3,13 @@ import useFetch from "@hooks/useFetch";
 import Typography from "@components/Typography/Typography";
 import Divider from "@components/Divider/Divider";
 import Button from "@components/Button/Button";
-import Icons from "@components/Icons";
+import Planet1 from "../../../public/planet1.svg?react";
+import Planet2 from "../../../public/planet2.svg?react";
+import Planet3 from "../../../public/planet3.svg?react";
+import Planet4 from "../../../public/planet4.svg?react";
+import Slot from "@components/Slot";
 
-const planets = ["planetRing", "planetStripesDots", "planetStripes"];
+const planets = [<Planet1 />, <Planet2 />, <Planet3 />, <Planet4 />];
 
 const Timeline = () => {
   const { data, loading } = useFetch("https://api.spacexdata.com/v4/history");
@@ -33,13 +37,7 @@ const Timeline = () => {
         data.map((item, i) => (
           <div className={styles.story} key={item.id}>
             <div className={styles.side}>
-              <div>
-                <Icons
-                  width={"100%"}
-                  height={"100%"}
-                  variant={getRandomPlanet()}
-                />
-              </div>
+              <Slot className={styles.planet}>{getRandomPlanet()}</Slot>
               {i < data.length - 1 && (
                 <Divider
                   orientation={"vertical"}
