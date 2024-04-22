@@ -3,7 +3,7 @@
 }
 
 .hero {
-  height: calc(100vh - 52px);
+  height: calc(100vh - var(--nav-height));
   background-color: var(--white);
   color: var(--yellow);
   border-top-left-radius: var(--rounded-md);
