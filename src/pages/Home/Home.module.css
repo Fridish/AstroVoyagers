@@ -37,7 +37,18 @@
   flex-direction: column;
   gap: var(--gap-sm);
   width: 100%;
+  height: 100%;
   z-index: 2;
+  animation: fade-in ease forwards 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .planet4 {
