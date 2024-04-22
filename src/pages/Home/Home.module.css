@@ -3,19 +3,214 @@
 }
 
 .hero {
-  height: calc(100vh - 52px);
-}
-
-.hero .canvas {
-  width: 100%;
-  height: 100%;
+  height: calc(100vh - var(--nav-height));
   background-color: var(--white);
   color: var(--yellow);
+  border-top-left-radius: var(--rounded-md);
+  border-top-right-radius: var(--rounded-md);
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.hero h5 {
+  color: var(--black);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.head {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  font-weight: 700;
-  border-top-left-radius: var(--rounded-md);
-  border-top-right-radius: var(--rounded-md);
+  flex-direction: column;
+  gap: var(--gap-sm);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  animation: fade-in ease forwards 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.planet4 {
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  width: 250px;
+  height: fit-content;
+}
+
+.planet2 {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  width: 150px;
+  height: fit-content;
+}
+
+.planet3 {
+  width: 300px;
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  transform: rotate(-90deg);
+}
+
+.star1 {
+  position: absolute;
+  bottom: 150px;
+  left: 20px;
+  width: 20px;
+  transform: rotate(20deg);
+}
+
+.star2 {
+  position: absolute;
+  bottom: 200px;
+  left: 30px;
+  width: 30px;
+  transform: rotate(-10deg);
+}
+
+.star3 {
+  position: absolute;
+  bottom: 180px;
+  left: 15px;
+  width: 15px;
+}
+
+.rocket {
+  width: 60px;
+  height: fit-content;
+}
+
+.rocket2 {
+  width: 40px;
+  height: fit-content;
+  transform: rotate(180deg);
+}
+
+.rocketContainer {
+  position: absolute;
+  transform-origin: right;
+  bottom: 10px;
+  right: 50px;
+  width: 200px;
+  animation: fly infinite linear forwards 20s;
+}
+
+.rocketContainer2 {
+  position: absolute;
+  transform-origin: right;
+  top: 30px;
+  right: 60px;
+  width: 150px;
+  transform: rotate(50deg);
+  animation: fly2 infinite linear reverse 25s;
+}
+
+@keyframes fly {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fly2 {
+  from {
+    transform: rotate(50);
+  }
+  to {
+    transform: rotate(410deg);
+  }
+}
+
+@media (min-width: 600px) {
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+
+  .hero h5 {
+    font-size: 1.2rem;
+  }
+
+  .planet4 {
+    bottom: -80px;
+    width: 300px;
+  }
+
+  .planet2 {
+    width: 200px;
+    top: 100px;
+  }
+
+  .rocketContainer {
+    width: 230px;
+    bottom: 20px;
+    right: 80px;
+  }
+}
+
+@media (min-width: 880px) {
+  .hero h1 {
+    font-size: 4.5rem;
+    line-height: 4.75rem;
+  }
+
+  .hero h5 {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    gap: var(--gap-lg);
+  }
+
+  .planet4 {
+    bottom: -90px;
+    width: 350px;
+  }
+
+  .planet2 {
+    width: 230px;
+    top: 50px;
+  }
+
+  .rocketContainer {
+    bottom: 40px;
+    right: 115px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 1130px) {
+  .hero h1 {
+    font-size: 5.5rem;
+    line-height: 5.75rem;
+  }
+
+  .hero h5 {
+    font-size: 1.3rem;
+  }
 }

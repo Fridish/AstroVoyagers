@@ -1,4 +1,6 @@
 :root {
+  --nav-height: 54px;
+
   /* Colors */
   --yellow: #f7c649;
   --black: #000000;
@@ -54,4 +56,10 @@ body {
 a {
   text-decoration: none;
   color: var(--white);
+  outline: none;
+}
+
+@font-face {
+  font-family: "porter-sans";
+  src: url("/fonts/porter-sans-inline-block-webfont.woff");
 }

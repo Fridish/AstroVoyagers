@@ -31,6 +31,17 @@
   user-select: none;
 }
 
-.side img {
+.planet {
+  aspect-ratio: 1 / 1;
   width: 100%;
+}
+
+.planet path {
+  fill: white;
+}
+
+@media (min-width: 35rem) {
+  .story {
+    grid-template-columns: 52px 1fr;
+  }
 }
