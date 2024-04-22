@@ -10,7 +10,7 @@ const Home = () => {
     <main className={styles.container}>
       <section className={styles.hero}>Hero</section>
       <section className={styles.timeline}>
-        {data &&
+        {Array.isArray(data) &&
           data.map((item) => (
             <div style={{ margin: "1rem 0" }} key={item.id}>
               <p>{item.title}</p>

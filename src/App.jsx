@@ -12,7 +12,7 @@ const App = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rockets/:id" element={<Rocket />} />
+          <Route path="/rockets/:rocket" element={<Rocket />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

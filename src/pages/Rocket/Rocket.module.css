@@ -2,3 +2,30 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  text-align: center;
+  color: #F7C649;
+  height: auto;
+  height: calc(100vh - 52px);
+}
+.heroBackground {
+  filter: grayscale(100%) brightness(0.7) contrast(1.2);
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+
+.RocketDetails{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
