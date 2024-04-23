@@ -1,0 +1,22 @@
+.container {
+  height: calc(100vh - var(--nav-height));
+  width: calc(100% - (var(--m-md) * 2));
+  padding: var(--p-md);
+  margin: 0 auto;
+  border-top-left-radius: var(--rounded-md);
+  border-top-right-radius: var(--rounded-md);
+  background-color: var(--white);
+  color: var(--black);
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
