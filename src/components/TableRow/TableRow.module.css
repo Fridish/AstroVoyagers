@@ -1,0 +1,5 @@
+.tableRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid var(--white);
+}

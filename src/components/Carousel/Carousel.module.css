@@ -1,0 +1,20 @@
+.carousel{
+    width:100%; 
+}
+
+  .prevButton, .nextButton{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--m-3xl);
+  }
+  .content {
+    min-height: 200px;
+  }
