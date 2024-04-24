@@ -3,4 +3,18 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    margin-bottom: var(--m-3xl);
+}
+.container > h2 {
+    font-size: 1.5rem;
+}
+
+.container > h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px){
+    .container > h2{
+        font-size: 3rem;   
+    }
 }
