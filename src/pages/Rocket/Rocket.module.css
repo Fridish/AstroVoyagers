@@ -15,6 +15,28 @@
   color: #F7C649;
   height: calc(100vh - 52px);
 }
+
+.heroText{
+  animation: fade-in ease forwards 2s;
+}
+.heroText h1 {
+  font-size: 2.25rem;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroText h1 {
+    font-size: 4rem;
+  }
+}
+
 .heroBackground {
   border-top-left-radius: var(--rounded-md);
   border-top-right-radius: var(--rounded-md);
@@ -40,7 +62,7 @@
   flex-direction: column;
   text-align: left;
   margin-top: var(--m-xl);
-  margin-bottom: var(--m-xl);
+  margin-bottom: var(--m-3xl);
 }
 
 /* .specsContainer{
@@ -57,6 +79,7 @@
 .image{
   filter: grayscale(100%) brightness(0.7) contrast(1.2);
   overflow: hidden;
+  border-radius: var(--rounded-md);
   height: 100%;
   width: 100%;
   object-fit: cover;

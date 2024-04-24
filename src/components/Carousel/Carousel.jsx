@@ -1,6 +1,6 @@
 import styles from "./Carousel.module.css"
 import Typography from "@components/Typography/Typography";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowLeft from "../../../public/arrowLeft.svg?react";
 import ArrowRight from "../../../public/arrowRight.svg?react";
 
@@ -19,11 +19,14 @@ const Carousel = ({className, children}) => {
        const isLastSlide = currentIndex === children.length - 1;
          const newIndex = isLastSlide ? 0 : currentIndex + 1;
          setCurrentIndex(newIndex);
+         useEffect(() => {
+
+    },[currentIndex]);
     }
     return (
         <main className={styles.carousel}>
             <div>
-                <div className={styles.content}>
+                <div className={styles.content}  key={currentIndex}>
                     {React.cloneElement(children[currentIndex])}
                 </div>
                     <div className={styles.buttons}>
