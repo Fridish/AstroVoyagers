@@ -3,11 +3,11 @@ import useFetch from "@hooks/useFetch";
 import Typography from "@components/Typography/Typography";
 import Divider from "@components/Divider/Divider";
 import Button from "@components/Button/Button";
+import Slot from "@components/Slot";
 import Planet1 from "../../../public/planet1.svg?react";
 import Planet2 from "../../../public/planet2.svg?react";
 import Planet3 from "../../../public/planet3.svg?react";
 import Planet4 from "../../../public/planet4.svg?react";
-import Slot from "@components/Slot";
 
 const planets = [<Planet1 />, <Planet2 />, <Planet3 />, <Planet4 />];
 
