@@ -19,10 +19,10 @@ const Carousel = ({className, children}) => {
        const isLastSlide = currentIndex === children.length - 1;
          const newIndex = isLastSlide ? 0 : currentIndex + 1;
          setCurrentIndex(newIndex);
-         useEffect(() => {
+    }
+    useEffect(() => {
 
     },[currentIndex]);
-    }
     return (
         <main className={styles.carousel}>
             <div>
