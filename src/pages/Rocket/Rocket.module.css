@@ -72,7 +72,7 @@
   margin-bottom: 1px solid var(--white);
 }
 .details {
-  margin-top: 108px;
+  margin-top: calc(var(--nav-height)* 2);
   margin-left: var(--m-3xl);
   margin-right: var(--m-3xl);
 }
@@ -84,5 +84,4 @@
   width: 100%;
   object-fit: cover;
   aspect-ratio: 16/9; 
-  background-position: center;
 }
