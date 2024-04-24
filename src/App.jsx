@@ -5,6 +5,7 @@ import Nav from "@components/Nav/Nav";
 const Home = lazy(() => import("./pages/Home/Home"));
 const Rocket = lazy(() => import("./pages/Rocket/Rocket"));
 const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
+const RocketValidator = lazy(() => import("./RocketValidator"));
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rockets/:rocket" element={<Rocket />} />
+          <Route path="/rockets/:rocket" element={<RocketValidator />}>
+            <Route index element={<Rocket />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

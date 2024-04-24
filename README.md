@@ -1,8 +1,8 @@
-<p align="center" ><img src="./public/logo.svg" alt="planet" width="150px" style="background-color: white; padding: 1rem; border-radius: 1rem;" /></p>
+<p align="center" ><img src="./public/logo.svg" alt="planet" width="150px" /></p>
 
 # Atro Voyagers
 
-Explore interesting information about SpaceX history, rockets, and the infamous Tesla Roadster. This is a small react project that display information from a [`SpaceX-API`](https://github.com/r-spacex/SpaceX-API/tree/master).
+Explore interesting information about SpaceX history and rockets This is a small react project that display information from a [`SpaceX-API`](https://github.com/r-spacex/SpaceX-API/tree/master).
 
 **Requirements for the project**
 
