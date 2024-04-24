@@ -16,9 +16,7 @@ const Home = () => {
             <Typography variant="h1" style={{ fontFamily: "porter-sans" }}>
               Voyagers
             </Typography>
-            <Typography variant="h5">
-              SpaceX History, Rockets and Roadster
-            </Typography>
+            <Typography variant="h5">SpaceX History and Rockets</Typography>
           </div>
           <Wallpaper />
         </section>
