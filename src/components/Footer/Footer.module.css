@@ -1,0 +1,24 @@
+.footer {
+  padding: var(--p-xl) var(--p-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > div {
+  display: flex;
+  gap: var(--gap-md);
+}
+
+.footer > div:nth-child(2) {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 760px) {
+  .footer {
+    flex-direction: row;
+    gap: var(--gap-3xl);
+  }
+}

@@ -5,7 +5,7 @@ import useWindowSize from "@hooks/useWindowSize";
 import Hamburger from "@components/Hamburger/Hamburger";
 import Logo from "../../../public/logo.svg?react";
 
-const List = ({ onClick }) => {
+export const List = ({ onClick }) => {
   return (
     <>
       <Link onClick={onClick} to={"/rockets/falcon-1"}>

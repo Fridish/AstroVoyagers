@@ -51,101 +51,6 @@
   }
 }
 
-.planet4 {
-  position: absolute;
-  bottom: -70px;
-  right: -70px;
-  width: 250px;
-  height: fit-content;
-}
-
-.planet2 {
-  position: absolute;
-  top: 150px;
-  left: -50px;
-  width: 150px;
-  height: fit-content;
-}
-
-.planet3 {
-  width: 300px;
-  position: absolute;
-  top: -50px;
-  right: -100px;
-  transform: rotate(-90deg);
-}
-
-.star1 {
-  position: absolute;
-  bottom: 150px;
-  left: 20px;
-  width: 20px;
-  transform: rotate(20deg);
-}
-
-.star2 {
-  position: absolute;
-  bottom: 200px;
-  left: 30px;
-  width: 30px;
-  transform: rotate(-10deg);
-}
-
-.star3 {
-  position: absolute;
-  bottom: 180px;
-  left: 15px;
-  width: 15px;
-}
-
-.rocket {
-  width: 60px;
-  height: fit-content;
-}
-
-.rocket2 {
-  width: 40px;
-  height: fit-content;
-  transform: rotate(180deg);
-}
-
-.rocketContainer {
-  position: absolute;
-  transform-origin: right;
-  bottom: 10px;
-  right: 50px;
-  width: 200px;
-  animation: fly infinite linear forwards 20s;
-}
-
-.rocketContainer2 {
-  position: absolute;
-  transform-origin: right;
-  top: 30px;
-  right: 60px;
-  width: 150px;
-  transform: rotate(50deg);
-  animation: fly2 infinite linear reverse 25s;
-}
-
-@keyframes fly {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fly2 {
-  from {
-    transform: rotate(50);
-  }
-  to {
-    transform: rotate(410deg);
-  }
-}
-
 @media (min-width: 600px) {
   .hero h1 {
     font-size: 3.5rem;
@@ -154,22 +59,6 @@
 
   .hero h5 {
     font-size: 1.2rem;
-  }
-
-  .planet4 {
-    bottom: -80px;
-    width: 300px;
-  }
-
-  .planet2 {
-    width: 200px;
-    top: 100px;
-  }
-
-  .rocketContainer {
-    width: 230px;
-    bottom: 20px;
-    right: 80px;
   }
 }
 
@@ -185,22 +74,6 @@
 
   .hero {
     gap: var(--gap-lg);
-  }
-
-  .planet4 {
-    bottom: -90px;
-    width: 350px;
-  }
-
-  .planet2 {
-    width: 230px;
-    top: 50px;
-  }
-
-  .rocketContainer {
-    bottom: 40px;
-    right: 115px;
-    width: 240px;
   }
 }
 

@@ -1,5 +1,8 @@
-.container {
-  max-width: 1440px;
+.container{
+  width: 100%;
+}
+.contentContainer{
+  max-width: 1000px;
   margin: 0 auto;
 }
 .hero {
@@ -7,22 +10,44 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: var(--p-md) 0;
   text-align: center;
   color: #F7C649;
   height: calc(100vh - 52px);
 }
-.hero > * {
-  max-width: 70%;
+
+.heroText{
+  animation: fade-in ease forwards 2s;
 }
+.heroText h1 {
+  font-size: 2.25rem;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroText h1 {
+    font-size: 4rem;
+  }
+}
+
 .heroBackground {
+  border-top-left-radius: var(--rounded-md);
+  border-top-right-radius: var(--rounded-md);
   filter: grayscale(100%) brightness(0.7) contrast(1.2);
-  max-width: 100%;
   overflow: hidden;
+  width:calc(100% - 2rem); 
   height: 100%;
+  margin: 0 var(--p-md);
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 54px;
   z-index: -1;
 }
 
@@ -30,27 +55,34 @@
 .RocketDetails{
   display: flex;
   justify-content: space-between;
-  max-width: 70%;
 }
 .description {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  max-width: 80%;
   text-align: left;
   margin-top: var(--m-xl);
+  margin-bottom: var(--m-3xl);
 }
+
+/* .specsContainer{
+
+} */
 .description > tr {
   margin-bottom: 1px solid var(--white);
 }
 .details {
+  margin-top: 108px;
   margin-left: var(--m-3xl);
   margin-right: var(--m-3xl);
 }
 .image{
   filter: grayscale(100%) brightness(0.7) contrast(1.2);
-  max-width: 100%;
   overflow: hidden;
+  border-radius: var(--rounded-md);
   height: 100%;
+  width: 100%;
   object-fit: cover;
+  aspect-ratio: 16/9; 
+  background-position: center;
 }

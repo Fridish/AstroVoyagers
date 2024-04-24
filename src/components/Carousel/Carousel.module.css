@@ -1,0 +1,38 @@
+.carousel{
+    width:100%; 
+}
+
+  .prevButton, .nextButton{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+
+  }
+  .prevButton:hover, .nextButton:hover{
+    transform: scale(1.2);
+    transition-duration: 0.15s;
+    transition-behavior: ease-in-out;
+   }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--m-3xl);
+  }
+  .content {
+    min-height: 200px;
+    animation: change-slide ease-in;
+    animation-duration: 0.5s;
+  }
+  @keyframes change-slide {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        
+      opacity: 1;
+    }
+  }
