@@ -11,7 +11,7 @@
 
 .container > h2 {
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: var(--m-md);
 }
 @media (min-width: 768px){
     .container > h2{
